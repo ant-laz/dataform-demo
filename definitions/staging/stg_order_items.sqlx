@@ -1,0 +1,13 @@
+config {
+  type: "view",
+  schema: "staging",
+  description: "Cleaned version of thelook_ecommerce.order_items",
+  tags: ["staging"]
+}
+
+SELECT
+  `product_id`,
+  `sale_price`,
+  `user_id`
+FROM
+  ${ref("order_items")}

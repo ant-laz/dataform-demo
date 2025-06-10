@@ -1,5 +1,5 @@
 defaultProject: alazzaro-3-sandbox-744507
-defaultLocation: EU
+defaultLocation: US
 defaultDataset: ecommerce_metrics_pipeline
 defaultAssertionDataset: ecommerce_metrics_pipeline_assertions
 dataformCoreVersion: 3.0.0

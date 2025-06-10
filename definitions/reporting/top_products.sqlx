@@ -1,0 +1,12 @@
+config {
+  type: "table",
+  schema: "reporting",
+  description: "Identifies top selling products",
+}
+
+SELECT oi.product_id as product_id, p.name as product_name, p.category as product_category, count(*) as num_of_orders
+FROM ${ref("stg_products")} as p 
+JOIN ${ref("stg_order_items")} as oi
+ON p.id = oi.product_id
+GROUP BY 1,2,3
+ORDER BY num_of_orders DESC
