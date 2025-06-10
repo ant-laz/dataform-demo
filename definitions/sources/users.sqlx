@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "bigquery-public-data",
+  schema: "thelook_ecommerce",
+  name: "users",
+  description: "Programatically generated users for The Look fictitious e-commerce store"
+}

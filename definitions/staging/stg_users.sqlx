@@ -1,0 +1,14 @@
+config {
+  type: "view",
+  schema: "staging",
+  description: "Cleaned version of thelook_ecommerce.users",
+  tags: ["staging"]
+}
+
+SELECT
+  city,
+  first_name,
+  id,
+  last_name
+FROM
+  ${ref("users")}
